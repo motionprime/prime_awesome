@@ -6,12 +6,13 @@ module PrimeAwesome
         alias_method :draw_options!, :draw_options
         def draw_options
           if icon = computed_options[:fa_icon]
+            @padding_top = 0
             draw_options!.merge(
-              text: MotionAwesome.hex_for_icon(icon.to_s.gsub('_', '-')), 
-              force_attributed: true, 
+              text: MotionAwesome.hex_for_icon(icon.to_s.gsub('_', '-')),
+              force_attributed: true,
               font: 'FontAwesome'.uifont(computed_options[:fa_size] || 14)
             )
-          else 
+          else
             draw_options!
           end
         end
