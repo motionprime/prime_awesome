@@ -1,6 +1,6 @@
 # PrimeAwesome
 
-Add font awesome support to MotionPrime.
+Add [font awesome](http://fortawesome.github.io/Font-Awesome/icons/) support to MotionPrime.
 
 ## Installation
 
